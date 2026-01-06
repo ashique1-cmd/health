@@ -262,7 +262,7 @@ header{
     height: 70vh;
     background: rgba(33, 32, 26, 0.9);
     top: 175px;
-    left: -350px;
+    left: -200%;
     transition: all .1s;
     display:block;cursor: pointer;
     z-index: 1;
@@ -290,20 +290,25 @@ header{
     .containar-1 .hero h1{
         font-size: 30px;
         margin-left: 50px;
+        margin-top: -180px;
     }
     .containar-1 .hero h2{
         font-size: 20px;
         margin-left: 50px;
     }
     .containar-1 .hero p{
-        font-size: 17px;
+        font-size: 13px;
         margin-left: 50px;
+        line-height: 15px;
     }
     .containar-1 .hero .check_btn{
         margin-left: 50px;
         padding: 10px 10px;
-       line-height: 0;
        font-size: 15px;
+       line-height: 70px;
+    }
+    .main .containar-1 .backgroud_img img{
+        height: 50vh;
     }
     
 
