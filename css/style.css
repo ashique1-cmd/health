@@ -130,7 +130,7 @@ header{
     top: 50%;
     left: 30%;
     transform: translate(-50%,-30%);
-    z-index: 1;
+    z-index: 0.5;
 }
 .containar-1 .hero h1{
     font-size: 50px;
@@ -174,14 +174,15 @@ header{
 
 .backgroud_img img{
     top: 5%;
-    position: absolute;
+    position:absolute;
     height: 80%;
     width: 100%;
     margin-top: 20px;
-    opacity: 1;
+    opacity: 0;
 }
+
 .backgroud_img img:nth-child(1){
-    animation: animate1 20s infinite;
+    animation: animate1 50s infinite;
 }
 @keyframes animate1{
     60%{
@@ -189,12 +190,13 @@ header{
     }
 }
 .backgroud_img img:nth-child(2){
-    animation: animate2 10s infinite;
+    animation: animate2 50s infinite;
 }
 @keyframes animate2{
     100%{
         opacity: 1;
     }
+
 }
 /* mobile responsiv */
 @media screen and (max-width: 768px) {
@@ -286,6 +288,7 @@ header{
 
     .action-btn{
         display: none;
+       overflow: hidden;
     }
     .containar-1 .hero h1{
         font-size: 30px;
@@ -310,6 +313,91 @@ header{
     .main .containar-1 .backgroud_img img{
         height: 50vh;
     }
-    
+}
+/* section one end */
+
+/* section two start*/
+.booking {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: -83px;
+}
+.booking .info_sector{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+.booking .info_sector .bed{
+    background-color:#83C4FF ;
+    padding: 50px 20px 0px 100px ;
+}
+.booking .info_sector .fa-solid{
+    font-size: 60px;
+    color: #F5FBFF;
+}
+.booking .info_sector h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: #F5FBFF;
 
 }
+.booking .info_sector p{
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.booking .info_sector .apply{
+    padding: 15px 40px;
+    outline: #eee 1px solid;
+    line-height: 100px;
+}
+.booking .info_sector a{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.booking .info_sector a:hover{
+    background-color: #FFFFFF;
+    color: #00AEEF;
+    outline: auto;
+}
+.booking .info_sector .call{
+    background-color:#5DB2FF ;
+     padding: 60px 30px 0px 30px ;
+}
+.booking .info_sector .chamber{
+    background-color:#83C4FF ;
+    padding: 60px 90px 0px 30px ;
+    
+}
+/* mobile responsiv */
+@media screen and (max-width: 768px) {
+  
+    .booking {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    margin-top: -270px;
+    
+ }
+ .booking .info_sector{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .booking .info_sector .bed,
+  .booking .info_sector .call,
+  .booking .info_sector .chamber{
+    width: 100% !important;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+
+}
+
+/* section two end */
