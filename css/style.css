@@ -55,7 +55,7 @@ header{
     height: 60px;
     background-color: #FFFFFF;
     height: 50px;
-    margin-top: 20px;
+    padding: 20px;
 }
 .main-nav {
     background-color: #FFFFFF;
@@ -124,6 +124,7 @@ header{
     width: 100%;
     height: 100vh;
     position: relative;
+    margin-top: -3%;
 }
 .containar-1 .hero{
     position: absolute;
@@ -394,7 +395,71 @@ header{
     box-sizing: border-box;
   }
 
-
 }
 
 /* section two end */
+/* section three start */
+.care_blog{
+    width: 100%; height: auto;
+    position: absolute;
+    box-sizing: border-box;
+}
+.care_blog .care{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.care_blog .care .share_idea{
+    justify-content: center;
+    padding: 150px 0px 0px 80px;
+}
+.care_blog .care .share_idea .teeth2{
+    margin-top:-25rem;
+    margin-left: 11rem;
+}
+.welcom{
+    padding: 150px 100px 0px 150px;
+}
+.welcom h3{
+    font-size: 25px;
+    font-family:sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.welcom h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 2px;
+    background-color: #00bcd4;
+}
+.welcom h1{
+    font-size: 50px;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+.welcom p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.3);
+}
+.welcom .learn{
+    padding: 15px 40px ;
+    outline: #00AEEF 1px solid;
+    line-height: 150px;
+}
+.welcom a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #00AEEF;
+} 
+.welcom a:hover{
+    background-color: #00bcd4;
+    color: #F5FBFF;
+}
+/* section three end */
