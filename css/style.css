@@ -602,6 +602,8 @@ header{
      cursor: pointer;
      color: #00AEEF;
 }
+@media screen and (max-width: 480px){
+    
 .Department{
     width: 100%;
     height: auto;
@@ -618,5 +620,6 @@ header{
     position: relative;
     margin: 0 auto;
     flex-direction:column ;
+}
 }
 /* section four end */
