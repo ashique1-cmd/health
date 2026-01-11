@@ -3,6 +3,8 @@ body{
     padding: 0;
     font-family: 'popines' sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
 }
 header{
     width: 100%;
@@ -198,8 +200,7 @@ header{
     }
 }
 /* mobile responsiv */
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 480px) {
     /* উপরের ছোট টপ-বার হাইড করা বা সাজানো */
     .top-header {
         width: 100%;
@@ -254,7 +255,7 @@ header{
     cursor: pointer;
     position:fixed ;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin-left: -30px;
       
     }
    .main-header .containar .nav-link{
@@ -371,7 +372,7 @@ header{
     
 }
 /* mobile responsiv */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   
     .booking {
     width: 100%;
@@ -462,4 +463,39 @@ header{
     background-color: #00bcd4;
     color: #F5FBFF;
 }
+
+@media screen and (max-width: 480px) {
+    .care_blog{
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .care_blog .care{
+       display: block;
+    }
+    .care_blog .care .teeth{
+        margin-left: -50px;
+        height: 400px;
+
+    }
+    .care_blog .care .teeth2{
+        display: none;
+    }
+    .care_blog .welcom {
+       float: left;
+      margin-left: -100px;
+      margin-top: -100px;
+    }
+   .care_blog .welcom h3{
+       font-size: 15px;
+    }
+    .care_blog .welcom h1{
+        font-size: 30px;
+    }
+    .care_blog .welcom p{
+        font-size: 13px;
+    }
+}
+
 /* section three end */
